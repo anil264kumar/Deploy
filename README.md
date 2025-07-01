@@ -1,0 +1,1 @@
+This is a basic nodejs server that calculates the simple interest and total Amount
