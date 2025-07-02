@@ -10,6 +10,16 @@ const PORT = process.env.PORT || 3000
 app.use(express.json());
 app.use(cors())
 
+
+app.get('/sum',(req,res)=>{
+  const a = parseFloat(req.query.a);
+  const b = parseFloat(req.query.b);
+
+  const sum = a + b;
+  res.send(sum)
+
+})
+
 app.get("/interest", (req, res) => {
   const principal = parseFloat(req.query.p);
   const rate = parseFloat(req.query.r);
